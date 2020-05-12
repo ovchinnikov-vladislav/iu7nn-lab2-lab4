@@ -1,0 +1,21 @@
+.grid_canvas {
+    -fx-border-width: 1;
+    -fx-border-color: black;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-opacity: 0.7;
+}
+
+.text_literal {
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-border-width: 1px;
+    -fx-border-color: black;
+    -fx-border-radius: 5px;
+    -fx-highlight-fill: gray;
+    -fx-font-size: 24;
+    -fx-highlight-text-fill: -fx-background;
+    -fx-background-radius: 5px;
+    -fx-pref-height: 50;
+    -fx-max-height: 50;
+    -fx-min-height: 50;
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<GridPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="nn.ovchinnikov.lab4.nn.front.ui.Controller" stylesheets="style.css">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints prefHeight="100"/>
+        <RowConstraints vgrow="SOMETIMES"/>
+        <RowConstraints prefHeight="100"/>
+    </rowConstraints>
+    <TextField fx:id="textAnimal" focusTraversable="false" editable="false" GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="text_literal">
+        <GridPane.margin>
+            <Insets top="5" left="10" right="15" bottom="5"/>
+        </GridPane.margin>
+    </TextField>
+    <ImageView fx:id="imageView" GridPane.rowIndex="1" GridPane.halignment="CENTER">
+        <image>
+            <Image url="default.jpg"/>
+        </image>
+    </ImageView>
+    <HBox GridPane.rowIndex="2" GridPane.columnIndex="0" spacing="5" GridPane.halignment="CENTER">
+        <GridPane.margin>
+            <Insets top="25" left="10" right="15"/>
+        </GridPane.margin>
+        <Button text="Выбрать изображение" alignment="CENTER" onMouseClicked="#selectedImageClicked"/>
+    </HBox>
+</GridPane>
